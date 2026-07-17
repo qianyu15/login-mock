@@ -13,7 +13,7 @@ app.use(express.static(__dirname));
 // ログイエンドポイント
 app.post("/login", (req, res) => {
 
-  loginLog.push({user:req.body.user,password:req.body.psssword,ip:req.ip});
+  loginLog.push({user:req.body.user,password:req.body.password,ip:req.ip});
   res.json({ログイン成功:"そりゃそうだろ"});
 
 });
