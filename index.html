@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sign in</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-white flex flex-col items-center justify-center">
+
+
+  <!-- Logo -->
+  <div class="mb-8">
+
+    <div class="w-16 h-16 rounded-full bg-black flex items-center justify-center">
+      <svg
+        class="w-10 h-10 text-white"
+        viewBox="0 0 24 24"
+        fill="currentColor">
+
+        <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48v-1.7c-2.78.62-3.37-1.2-3.37-1.2-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.56 2.36 1.11 2.94.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.8c.85 0 1.7.12 2.5.36 1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.02 1.64 1.02 2.76 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.48A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+
+      </svg>
+    </div>
+
+  </div>
+
+
+
+  <h1 class="text-2xl font-semibold mb-6">
+    Sign in
+  </h1>
+
+
+
+  <!-- Card -->
+  <div class="w-full max-w-sm border border-gray-200 rounded-lg p-6 bg-gray-50">
+
+
+    <form class="space-y-4">
+
+
+      <div>
+
+        <label class="block text-sm font-medium mb-2">
+          Username or email address
+        </label>
+
+        <input
+          type="text"
+          class="w-full px-3 py-2 rounded-md border border-gray-300
+          bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+      </div>
+
+
+
+      <div>
+
+        <div class="flex justify-between mb-2">
+
+          <label class="text-sm font-medium">
+            Password
+          </label>
+
+          <a href="#"
+             class="text-sm text-blue-600 hover:underline">
+            Forgot password?
+          </a>
+
+        </div>
+
+
+        <input
+          type="password"
+          class="w-full px-3 py-2 rounded-md border border-gray-300
+          bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+
+      </div>
+
+
+
+      <button
+        class="w-full bg-green-600 text-white py-2 rounded-md
+        font-semibold hover:bg-green-700 transition">
+
+        Sign in
+
+      </button>
+
+
+    </form>
+
+
+  </div>
+
+
+
+  <!-- Create account -->
+
+  <div class="mt-4 w-full max-w-sm border rounded-lg p-5 text-center">
+
+    <span class="text-sm text-gray-600">
+      New to this service?
+    </span>
+
+    <a href="#"
+       class="text-blue-600 text-sm hover:underline ml-1">
+      Create an account
+    </a>
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <footer class="mt-10 text-sm text-gray-500 space-x-4">
+
+    <a href="#" class="hover:text-blue-600">
+      Terms
+    </a>
+
+    <a href="#" class="hover:text-blue-600">
+      Privacy
+    </a>
+
+    <a href="#" class="hover:text-blue-600">
+      Security
+    </a>
+
+    <a href="#" class="hover:text-blue-600">
+      Contact
+
+    </a>
+
+  </footer>
+
+
+</body>
+</html>
