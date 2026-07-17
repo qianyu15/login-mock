@@ -18,7 +18,7 @@ app.post("/login", (req, res) => {
 
 });
 app.get("/login/log",(q,r)=>{
-  r.json(loginHis);
+  r.json(loginLog);
 })
 
 app.listen(process.env.PORT || 3000, () => {
