@@ -73,7 +73,7 @@ async function loadDashboard(){
 
     const response = await fetch("/login/log");
 
-    const data = await response.json();
+    const rogu = await response.json();
 
 
     document.getElementById("status").textContent =
@@ -85,7 +85,7 @@ async function loadDashboard(){
     table.innerHTML = "";
 
 
-    data.logs.forEach(log => {
+    rogu.forEach(log => {
 
       const row = document.createElement("tr");
 
