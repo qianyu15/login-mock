@@ -14,7 +14,7 @@ app.use(express.static(__dirname));
 app.post("/login", (req, res) => {
 
   loginLog.push({user:req.body.user,password:req.body.password,ip:req.socket.remoteAddress});
-  res.send({login:"成功だろ。ころすy"});
+  res.send(String({login:"成功だろ。ころすy"}));
 
 });
 app.get("/login/log",(q,r)=>{
