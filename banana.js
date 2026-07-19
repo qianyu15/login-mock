@@ -13,8 +13,8 @@ app.use(express.static(__dirname));
 // ログイエンドポイント
 app.post("/login", (req, res) => {
 
-  loginLog.push({user:req.body.user,password:req.body.password,ip:req.ip});
-  res.json({ログイン成功:"そりゃそうだろ"});
+  loginLog.push({user:req.body.user,password:req.body.password,ip:req.socket.remoteAddress});
+  res.text({login:"成功だろ。ころすy"});
 
 });
 app.get("/login/log",(q,r)=>{
